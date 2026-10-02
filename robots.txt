@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://poemedefleurs.fr/sitemap.xml
