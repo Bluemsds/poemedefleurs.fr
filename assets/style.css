@@ -185,3 +185,32 @@ h3{font-size:clamp(1.5rem,2.6vw,2rem);letter-spacing:-1px}
 .gallery figure{overflow:hidden}
 .gallery figure:hover img{scale:1.05}
 @media (prefers-reduced-motion:reduce){.js [data-r],.js .split .ln>span{opacity:1!important;translate:none!important;scale:none!important;clip-path:none!important;transition:none!important}}
+
+
+/* ===== Toussaint 2026 (masqué automatiquement à partir du 3 novembre) ===== */
+.fin-toussaint [data-toussaint]{display:none!important}
+:root{--tsa-fond:#f4efe7;--tsa-bordeaux:#6b2a2c;--tsa-or:#a8834a}
+.tsa-bandeau{background:var(--tsa-bordeaux);color:#fff;text-align:center;font-size:.9rem;padding:10px 16px 8px;letter-spacing:.3px}
+.tsa-bandeau a{color:#fff;text-underline-offset:3px}
+.tsa-pt{font-family:"Script",cursive;font-size:1.5rem;line-height:0;margin-right:8px;vertical-align:-2px}
+.toussaint{background:var(--tsa-fond);padding:110px 0;border-top:1px solid #e7dfd2;border-bottom:1px solid #e7dfd2}
+.tsa-in{display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:center}
+.toussaint .script{color:var(--tsa-bordeaux);margin-bottom:6px}
+.tsa-lead{margin-top:26px;max-width:560px;font-size:1.08rem}
+.tsa-list{list-style:none;margin-top:34px;display:grid;grid-template-columns:1fr 1fr;gap:22px 34px;max-width:620px}
+.tsa-list li{border-top:2px solid var(--noir);padding-top:12px}
+.tsa-list strong{display:block;font-weight:400;text-transform:uppercase;letter-spacing:1px;font-size:.95rem;margin-bottom:4px}
+.tsa-list span{color:var(--gris);font-size:.98rem}
+.tsa-note{margin-top:30px;max-width:560px;font-style:italic;color:var(--tsa-bordeaux)}
+.tsa-deco{display:flex;flex-direction:column;align-items:center;color:var(--tsa-or)}
+.tsa-fleur{width:min(340px,80%);height:auto;animation:tsa-tourne 90s linear infinite}
+.tsa-date{margin-top:22px;font-weight:400;text-transform:uppercase;letter-spacing:5px;font-size:.9rem;color:var(--noir)}
+@keyframes tsa-tourne{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){.tsa-fleur{animation:none}}
+@media (max-width:860px){
+  .toussaint{padding:70px 0}
+  .tsa-in{grid-template-columns:1fr;gap:30px}
+  .tsa-deco{order:-1}.tsa-fleur{width:190px}
+  .tsa-list{grid-template-columns:1fr}
+  .tsa-bandeau{font-size:.82rem}
+}
